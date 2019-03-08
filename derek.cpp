@@ -7,19 +7,19 @@ class cpe1b
 	{
 	public:
 		void palindromic_prime(long x); // PASABOT ANI KAY MAGHIMO KAG FUNCTION NGA PALINDROMIC PRIME
-		void wasteful_number(long x);
+		void wasteful_number(long x);// GI HIMOAN UG FUNCTION PARA SA WASTEFUL NUMBER
 		long prime(long num); // KANI CLASS GAHIMOG FUNCTION NGA GINGANLAN UG PRIME NGA longEGER KAY longEGER MAN ANG PRIME DILI STRING DILI POD FLOAT
-		long binary(long num1);
-		long reverse(long num2);
-		long digit(long num3);
-		long primefactorization(long num4);
-		long j,count,x;
+		long binary(long num1);// FUNCTION NI CYA SA BINARY
+		long reverse(long num2);//FUNCTION SAD NI SA REVERSE
+		long digit(long num3);//FUNCTION PARA SA DIGIT
+		long primefactorization(long num4);//FUNCTION PARA SA PRIME FACTORIZATION
+		long j,count,x;//KANI PAUBOS MAO NI MGA VARIABLE DECLERATIONS
 		long pdtemp, bin, base, rem;
 		long rev, temp, key;
 		long dolor, digits;
 		long factors,t,i;
 		long rem1[100];
-		long derek;
+		long derek;// HANTOD ANI
 	};
 	
 int main() 
@@ -60,18 +60,18 @@ void cpe1b::palindromic_prime(long x)
 		prime(x);
 	}
 	
-void cpe1b::wasteful_number(long x)
+void cpe1b::wasteful_number(long x)//MAO NI CODE PARA PAG TAN.AW IF WASTEFUL NUMBER BA OR DILE
 	{
 		//cout<<endl<<"WASTEFUL NUMBER NI SIYA??WEHH??"<<endl;
 		digit(x);
-		if (digits>=factors)
-			{
+		if (digits>=factors)//GI BALI ANG CODE KAY NON-WASTEFUL NUMBER MAN ANG IPA DISPLAY
+			{				//SUPPOSE TO BE ING.ANI ANG CODE UNTA IF WASTEFULL # PA (digits<=factor)
 			//cout<<"Not WASTERFUL ko"<<endl;
 			cout<<x<<endl;
 			}
 	}
 	
-long cpe1b::prime(long num)
+long cpe1b::prime(long num)//KANI NGA CODE PARA PAG TAN.AW IF PRIME BA OR COMPOSITE 
 	{
 	/* PRIME */
 		count = 0;
@@ -95,7 +95,7 @@ long cpe1b::prime(long num)
 		}
 	}
 		
-long cpe1b::binary(long num1)
+long cpe1b::binary(long num1)//KANI NGA LINE KAY PARA PAG KUHA SA BINARY
 {
 	/* BINARY */
 	/*	prlongf("PRIME: %ld \n",pdnum[i]); */
@@ -114,8 +114,8 @@ long cpe1b::binary(long num1)
 }
 
 
-long cpe1b::reverse(long num2)
-{
+long cpe1b::reverse(long num2)//MAO NI PAG REVERSE SA BINARY UNYA TAN.AWON IF PALIONDROMIC PRIME BA OR DLE 
+{							  
 	/*REVERSE*/
 	key=num2;
 	temp=0;
@@ -132,7 +132,7 @@ long cpe1b::reverse(long num2)
 	{
 		//cout<<"PALINDROMIC PRIME KO YEHEY"<<endl;
 	}
-	else
+	else//SA ELSE RA GA COUT KAY ANG CODE KAY NON-PALINDROMIC PRIME ANG I PA DISPLAY
 	{
 		cout<<num2<<endl;
 	}
@@ -140,8 +140,8 @@ long cpe1b::reverse(long num2)
 	
 }
 
-long cpe1b::digit(long num3)
-{
+long cpe1b::digit(long num3)//MAO NI FUNCTION PARA SA PAG KUHA UG PILA KA DIGITS
+{							//KANI ANG CODE PARA SA PAG KUHA UG PILA KA DIGITS
 	dolor=num3;
 	derek=num3;
 	digits = 0;
@@ -154,8 +154,8 @@ long cpe1b::digit(long num3)
 	primefactorization(derek);
 }
 
-long cpe1b::primefactorization(long num4)
-{
+long cpe1b::primefactorization(long num4)//MAO NI FUNCTUON PARA SA PRIME FACTORITATION
+{										 //KANI NA CODE KAY PARA PAG KUHA SA PRIME FACTORS
 	x=num4;
 	factors=0;
 	i=2;
